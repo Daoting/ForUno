@@ -1,0 +1,17 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
+
+  <PropertyGroup>
+    <Description>DT内核库</Description>
+  </PropertyGroup>
+
+  <Import Project="..\Common\dtc.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.6" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid10.0' ">
+    <PackageReference Include="Square.OkHttp3" Version="3.12.3" />
+    <PackageReference Include="Square.OkIO" version="1.17.4" />
+  </ItemGroup>
+</Project>

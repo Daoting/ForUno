@@ -1,0 +1,18 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
+
+  <PropertyGroup>
+    <Description>DT控件库</Description>
+  </PropertyGroup>
+
+  <Import Project="..\Common\dtc.props" />
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'xamarinios10' ">
+    <PackageReference Include="GMImagePicker.Xamarin" Version="2.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dt.Core\Dt.Core.csproj" />
+    <ProjectReference Include="..\Dt.Charts\Dt.Charts.csproj" />
+  </ItemGroup>
+
+</Project>

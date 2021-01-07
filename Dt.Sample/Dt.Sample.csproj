@@ -1,0 +1,96 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
+
+  <PropertyGroup>
+    <Description>DT平台样例库</Description>
+  </PropertyGroup>
+
+  <Import Project="..\Common\dtc.props" />
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\Excel\1040.ssxml" />
+    <EmbeddedResource Include="Resource\Excel\CarRepair.ssxml" />
+    <EmbeddedResource Include="Resource\Excel\CarRepair.xlsx" />
+    <EmbeddedResource Include="Resource\Excel\Expense.ssxml" />
+    <EmbeddedResource Include="Resource\Excel\1040.xlsx" />
+    <EmbeddedResource Include="Resource\Excel\Expense.xlsx" />
+    <EmbeddedResource Include="Resource\Excel\MonthProfit.ssxml" />
+    <EmbeddedResource Include="Resource\Excel\StudentCalendar.ssxml" />
+    <EmbeddedResource Include="Resource\Excel\StudentCalendar.xlsx" />
+    <EmbeddedResource Include="Resource\Excel\Wedding.ssxml" />
+    <EmbeddedResource Include="Resource\browsers.csv" />
+    <EmbeddedResource Include="Resource\Excel\MonthProfit.xlsx" />
+    <EmbeddedResource Include="Resource\Excel\Wedding.xlsx" />
+    <EmbeddedResource Include="Resource\Logo.png" />
+    <EmbeddedResource Include="Resource\健康档案50.json" />
+    <EmbeddedResource Include="Resource\健康档案200.json" />
+    <EmbeddedResource Include="Resource\健康档案1000.json" />
+    <EmbeddedResource Include="Resource\成绩%28交叉表%29.json" />
+    <EmbeddedResource Include="Resource\成绩.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dt.Core\Dt.Core.csproj" />
+    <ProjectReference Include="..\Dt.Base\Dt.Base.csproj" />
+    <ProjectReference Include="..\Dt.Charts\Dt.Charts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\BaseExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\ChartExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\ChartPicture.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\DataExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\ExcelHome.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\ExcelTheme.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\FilterExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\FloatingObject.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\Formatter.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\ImgExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\PrintExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\RangeGroup.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\Sparkline.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\TouchExcel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Excels\UseCase.xaml" />
+  </ItemGroup>
+</Project>
