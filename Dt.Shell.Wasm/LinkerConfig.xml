@@ -1,0 +1,12 @@
+﻿<linker>
+  <assembly fullname="Dt.Core" />
+  <assembly fullname="Dt.Base" />
+  <assembly fullname="Dt.Sample" />
+  <assembly fullname="Dt.Charts" />
+  <assembly fullname="Dt.Shell.Wasm" />
+  <assembly fullname="Uno.UI" />
+  
+  <!-- Required for debugging -->
+  <assembly fullname="mscorlib" />
+  <assembly fullname="System.Core" />
+</linker>
